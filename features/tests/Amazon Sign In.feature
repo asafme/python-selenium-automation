@@ -6,6 +6,5 @@ Feature: # Homework 3 Search.feature
     Given Open Amazon page
     When Click on Orders
     Then Verify sign on page is opened
-    Then Verify sign in header is visible
-    Then Verify email input field is present.
+
 

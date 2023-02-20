@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from time import sleep
 from selenium.webdriver.chrome.service import Service
 
-service = Service('/Users/jessicamenashe/Desktop/automation/python-selenium-automation/chromedriver')
+service = Service('/chromedriver')
 driver = webdriver.Chrome(service=service)
 
 #Amazon logo
