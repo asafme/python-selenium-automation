@@ -4,10 +4,10 @@ Feature: Amazon cart verification
   Scenario: User can add a product to cart
     # Enter steps here
 
-  Given Open Amazon's page
+  Given Open Amazon website
   When Input text Roblox Gift Card
   When Click on the search button
-  And Click on the first product
-  And Click on add to cart button
-  And Open cart page
+  When Click on the first product
+  When Click on add to cart button
+  When Click on cart
   Then Verify cart has 1 product
