@@ -2,7 +2,7 @@
 Feature: Amazon cart verification
 
   Scenario: User can add a product to cart
-    # Enter steps here
+
 
   Given Open Amazon website
   When Input text Roblox Gift Card

@@ -1,6 +1,6 @@
 # Created by jessicamenashe at 2/21/23
-Feature: # Enter feature name here
-  # Enter feature description here
+Feature: Amazon Best Sellers Verification
+  Scenario: There are 5 Best Sellers links
 
-  Scenario: # Enter scenario name here
-    # Enter steps here
+Given Open Amazon Best Sellers Page
+Then Verify that headers has 5 links
