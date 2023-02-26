@@ -1,0 +1,19 @@
+h1 {
+color: darkred;
+font-size: 250%;
+background-color: darkcyan;
+}
+
+div.ingredients {
+    color: white;
+     background-image: url("download.jpeg");
+}
+
+h3 {
+    color: darkcyan;
+}
+
+div.how to {
+   background-image: url("download.jpeg")
+}
+
