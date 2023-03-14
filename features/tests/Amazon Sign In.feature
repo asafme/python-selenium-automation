@@ -1,10 +1,9 @@
 # Created by jessicamenashe at 2/19/23
-Feature: # Homework 3 Search.feature
-  # Enter feature description here
+Feature: User can verify that the sign in page is opened
 
-  Scenario: # User can access Sign In page
-    Given Open Amazon page
+  Scenario: User can access Sign In page
+    Given Open Amazon Homepage
     When Click on Orders
-    Then Verify sign on page is opened
+    Then Verify Sign in is opened
 
 
