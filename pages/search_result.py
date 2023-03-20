@@ -7,6 +7,7 @@ class SearchResult(Page):
     ADD_TO_CART = (By.ID, 'add-to-cart-button')
     CLICK_CART = (By.CSS_SELECTOR, "a[href='/gp/cart/view.html?ref_=sw_gtc']")
     VERIFY_SUBTOTAL = (By.CSS_SELECTOR, "#sc-subtotal-label-buybox")
+    SUBNAV_FRESH = (By.CSS_SELECTOR, "#nav-subnav[data-category='amazonfresh']")
 
     # def verify_search_results(self, expected_text):
 
@@ -24,3 +25,6 @@ class SearchResult(Page):
         actual_text = self.find_element(*self.VERIFY_SUBTOTAL).text
         expected_text = f"Subtotal ({expected_amount} item):"
         assert expected_text in actual_text, f"Expected Text not found"
+
+    def verify_selected_dept(self):
+        self.wait_for_element_appear(*self.SUBNAV_FRESH)
